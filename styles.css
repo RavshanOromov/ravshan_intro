@@ -1,4 +1,24 @@
 /* ===========GLOBAL-STYLES======== */
+
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/Spartan-Bold.woff2") format("woff2"),
+      url("../fonts/Spartan-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/Spartan-Medium.woff2") format("woff2"),
+      url("../fonts/Spartan-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 :root {
   --color-new: #5CA5A5;
   --color-secondary:#7C8F8F;
@@ -17,18 +37,15 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding: 0;
   margin: 0;
   font-family: "Spartan", "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   background-color: #f2f2f2;
 }
 .container {
   width: 100%;
   max-width: 1110px;
-  /* padding: 32px 40px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -63,10 +80,10 @@ a {
   margin-bottom: 76px;
   margin-right: auto;
   margin-left: auto;
+
 }
 .job__listings {
-
-
+  padding: 0;
 }
 .job__list {
   list-style: none;
@@ -101,7 +118,7 @@ a {
 .company__title {
   margin: 0;
   color: var(--color-new);
-  font-family: var  (--font-family-text);
+  font-family: "Spartan", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
@@ -126,6 +143,7 @@ a {
 .job__title {
   padding: 0;
   margin: 0;
+  font-family: var(--font-family-text);
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -167,11 +185,6 @@ margin-right: 16px;
 }
 .required__language {
   list-style: none;
-  padding: 4px 8px;
-  mix-blend-mode: normal;
-  /* background-color: var(--color-new);
-  opacity: 0.1; */
-  border-radius: 4px;
 }
 .required__language:not(:last-child) {
   margin-right: 30px;
@@ -182,4 +195,8 @@ margin-right: 16px;
   line-height: 24px;
   letter-spacing: -0.1px;
   color: var(--color-new);
+  padding: 4px 8px;
+  mix-blend-mode: normal;
+  background-color: #eaf4f4;
+  border-radius: 4px;
 }
